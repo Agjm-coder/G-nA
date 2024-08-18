@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="assests/icon.jpg">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <h2 class="logo"><a href="home.html">G'nA</a></h2>
+        <nav class="navigation">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="focus.html">Focus</a>
+            <a href="login.html" class = "active">Login</a>
+        </nav>
+    </header>
+    <div class="container">
+        <img src="assests/hill1.png" id = "hill1">
+        <img src="assests/hill2.png" id = "hill2">
+        <img src="assests/hill3.png" id = "hill3">
+        <img src="assests/hill4.png" id = "hill4">
+        <img src="assests/hill5.png" id = "hill5">
+        <img src="assests/tree.png" id = "tree">
+        <div class="wrapper">
+            <form action="">
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="username" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="password" required>
+                    <i class='bx bxs-lock-alt' ></i>
+                </div>
+
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="">Forgot password?</a>
+                </div>
+                <button type = "submit" class="btn">Login</button>
+
+                <div class="register-link">
+                    <p>Don't have an account? <a href="">Register</a></p>
+                </div>
+            </form>
+        </div>
+        <img src="assests/leaf.png" id = "leaf">
+        <img src="assests/plant.png" id = "plant">
+    </div>
+    <script src="scripts/login.js"></script>
+</body>
+
+</html>

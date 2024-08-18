@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #f9f9f9;
+    min-height: 100vh;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 2em;
+    margin-right: 270px;
+}
+
+.logo a{
+    color: #359381;
+    text-decoration: none;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: #359381;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover, 
+.navigation a.active {
+    background: #359381;
+    color: #fff;
+}
+
+.container{
+    background-color: rgba(0,0,0,.1);
+    width: min(90%, 500px);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 4em 2em;
+    border-radius: 0.5em;
+}
+
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.section-container{
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+.btn{
+    padding: 1em 2em;
+    border-radius: 0.5em;
+    background-color: #fff;
+    color: #359381;
+}
+
+.btn-focus{
+    background-color: #359381;
+    color: #fff;
+}
+
+.time-btn-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+#time{
+    text-align: center;
+    color: #fff;
+    font-size: 5em;
+    font-weight: 600;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+#btn-start,
+#btn-pause{
+    padding: 1em 2em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+#btn-reset{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}

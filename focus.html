@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="assests/icon.jpg">
+    <title>Focus</title>
+    <link rel="stylesheet" href="styles/focus.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <video loop muted plays-inline class="back-video">
+        <source src="videos/tree.mp4" type="video/mp4">
+    </video>
+    <header>
+        <h2 class="logo"><a href="home.html">G'nA</a></h2>
+        <nav class="navigation">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="focus.html" class="active">Focus</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="section-container">
+            <button id="focus" class="btn btn-timer btn-focus">
+                Focus
+            </button>
+            <button id="shortbreak" class="btn btn-shortbreak">
+                Short Break
+            </button>
+            <button id="longbreak" class="btn btn-longbreak">
+                Long Break
+            </button>
+        </div>
+        <div class="time-btn-container">
+            <span id="time"></span>
+            <div class="btn-container">
+                <button id="btn-start" class="show">Start</button>
+                <button id="btn-pause" class="hide">Pause</button>
+                <button id="btn-reset" class="hide"><i class='bx bx-revision'></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/focus.js"></script>
+</body>
+</html>
